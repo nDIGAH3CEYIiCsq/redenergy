@@ -1,0 +1,234 @@
+xml.instruct!
+
+base = "http://"+request.host
+
+xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
+ xml.url do
+    xml.loc base
+    xml.changefreq "always"
+    xml.priority 1
+ end
+ xml.url do
+    xml.loc url_for(:only_path =>false,:controller => :technologies, :action=> :index)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "monthly"
+    xml.priority 0.8
+ end
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :solutions, :action => :index)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "monthly"
+    xml.priority 0.8
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :solutions, :action => :ind_power_give)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "monthly"
+    xml.priority 0.8
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :solutions, :action => :unint_power_heating)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "monthly"
+    xml.priority 0.8
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :solutions, :action => :electrification_country_house)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "monthly"
+    xml.priority 0.8
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :solutions, :action => :autonomous_system_stand_sol)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "monthly"
+    xml.priority 0.8
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :solutions, :action => :uninterrupted_power_supply_stand_sol)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "monthly"
+    xml.priority 0.8
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :solutions, :action => :energy_efficient_lighting_jkh_220v_50hz)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "monthly"
+    xml.priority 0.8
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :home, :action => :index)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "monthly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :home, :action => :delivery)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "monthly"
+    xml.priority 0.9
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :home, :action => :guaranty)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "monthly"
+    xml.priority 0.9
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :company, :action => :index)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "monthly"
+    xml.priority 0.7
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :index)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :led_lighting)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :uninterruptible_power)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :invertors)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :wind_turbines)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzy_6_gel)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzy_12_gel)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzy_2_gel)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzb_6_12v)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzb_fa_12v)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzs_4_6_12v)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzb_2v)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzy_6_12v)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzy_fa_12v)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzy_12v)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :batteries_traction)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :self_power_gas)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :self_power_gasoline)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :solar_panels)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+
+ xml.url do
+    xml.loc url_for(:only_path => false, :controller => :catalog, :action => :optico_acust_ke_doa)
+    xml.lastmod w3c_date(Time.now)
+    xml.changefreq "weekly"
+    xml.priority 1
+ end
+end

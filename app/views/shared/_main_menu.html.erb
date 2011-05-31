@@ -1,0 +1,54 @@
+<%
+   url = request.fullpath
+   selected =  "main-menu-item   main-menu-item-selected"
+   un_selected = "main-menu-item"
+
+   calculator_class = "calculator-menu-item"
+   calculator_class_selected = "calculator-menu-item calculator-menu-item-selected"
+
+
+   request_url = url.to_s
+
+   calculator_class = request_url =~/\/calculator$/ ? calculator_class_selected : calculator_class
+   catalog_class = request_url =~ /\/catalog/ ? selected : un_selected
+   solutions_class = request_url =~ /\/solutions/ ? selected : un_selected
+   technologies_class = request_url =~ /\/technologies$/ ? selected : un_selected
+   company_class =request.url =~ /\/company$/ ? selected : un_selected %>
+<div id="main_menu">
+
+  <a href="/catalog">
+    <div class="<%= catalog_class %>">
+      <span>Каталог</span>
+    </div>
+  </a>
+
+  <a href="/solutions">
+    <div class="<%= solutions_class %>">
+      <span>Решения</span>
+    </div>
+  </a>
+  <a href="/technologies">
+    <div class="<%= technologies_class %>">
+      <span>Технологии</span>
+    </div>
+  </a>
+
+  <a href="/company">
+    <div class="<%= company_class %>">
+      <span>Компания</span>
+    </div>
+  </a>
+  <a href="/guaranty" class="menu-item-main">
+    Гарантия
+  </a>
+
+  <a href="/delivery" class="menu-item-main">
+    Доставка
+  </a>
+
+  <!-- <a href="/calculator">
+    <div class="<%= calculator_class %>">
+      <span>Калькулятор</span>
+    </div>
+  </a> -->
+</div>

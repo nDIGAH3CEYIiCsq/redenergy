@@ -1,0 +1,13 @@
+<a title="twitter" href="http://www.twitter.com/the_redenergy">
+  <h2>Последние новости</h2>
+</a>
+<a title="twitter" href="http://www.twitter.com/the_redenergy">
+  <img alt="twitter" src="/images/base/twitter.png" title="twitter" alt="twitter"/>
+</a>
+<div class="clear-both"></div>
+
+<% tweets.each do |tweet| %>
+    <div class="tweet">
+      <%= tweet.html_safe %>
+    </div>
+<% end %>

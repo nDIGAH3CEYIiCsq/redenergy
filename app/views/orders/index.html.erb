@@ -1,0 +1,47 @@
+<%= content_for :title do %>
+    Красная Энергия - Оформление заявки
+<% end %>
+<%= content_for :page_name do %>
+    Оформление заявки
+<% end %>
+<div id="products">
+  <div id="product">
+    <div style="width:800px; height:30px;">
+      <label id="error_message">
+        <%= flash[:error_message] %>
+      </label>
+    </div>
+    <%= form_for :order do |f| %>
+        <fieldset>
+          <div>
+            <div class="float-left" style="width:140px">
+              <label style="display:block" for="email">Ваше имя:</label>
+              <label style="display:block;margin:30px 0 0 0" for="name">*E-mail:</label>
+              <label style="display:block;margin:30px 0 0 0" for="email">Телефон:</label>
+              <label style="display:block;margin:30px 0 0 0" for="message">*Описание заявки:</label>
+            </div>
+            <div class="float-left" style="width:400px">
+              <%= f.text_field :name, :class=> 'text-field', :style=>"width:607px", :class=> "text-field-shine" %>
+              <%= f.text_field :email, :class=> 'text-field', :style=>"width:607px", :class=> "text-field-shine" %>
+              <%= f.text_field :telephone, :class=> 'text-field', :style=>"width:607px", :class=> "text-field-shine" %>
+              <%= f.text_area :message, :size=> "73x7" %>
+            </div>
+          </div>
+          <div class="clear-both"></div>
+          <input value="Оформить" style="float:right; margin:10px 16px 0 0" type="submit">
+
+          <!-- <div style="height:40px; float:right; margin:10px 18px 0 0">
+            <a style="color:white;" href="#" id="order_btn" class="btn send_btn hand">
+              <span style="padding:15px;">Оформить</span>
+            </a>
+          </div> -->
+          <div class="clear-both"></div>
+        </fieldset>
+    <% end %>
+
+  </div>
+  <div>
+    <a href="/delivery" style="margin:0 10px 0 0">Доставка</a> |
+    <a href="/guaranty" style="margin:0 0 0 10px">Гарантиии, Оплата сервисного визита, Ограничения ответственности</a>
+  </div>
+</div>

@@ -1,0 +1,151 @@
+<%= content_for :page_name do %>
+    Расчёт системы
+<% end %>
+<div>
+
+</div>
+<div id="products">
+  <div id="calculator">
+    <table class="table" cellspacing="0" cellpadding="0">
+      <thead>
+          <tr class="row-head">
+            <td colspan="2"><a href="/table_calculating_electrical_appliances">Таблица расчета энергопотребления по электроприборам</a></td>
+          </tr>
+      </thead>
+      <tbody>
+      <tr class="odd-row">
+        <td class="row-name"><span>Назначение системы:</span></td>
+        <td><%= select_tag :system_target, options_for_select({"Бесперебойная"=> "Continuous", "Автономная"  => "Autonomous"}) %></td>
+      </tr>
+      <tr class="even-row">
+        <td class="row-name"><span>Энергопотребления за месяц:</span></td>
+        <td><%= text_field_tag :consumption %>кВт*час</td>
+      </tr>
+      <tr class="odd-row">
+        <td class="row-name"><span>Максимальная выходная мощность системы:</span></td>
+        <td><%= text_field_tag :consumption %>Вт</td>
+      </tr>
+      <tr class="even-row">
+        <td colspan="2"><span>Выбор аккумулятора:</span></td>
+      </tr>
+      <tr class="odd-row">
+        <td class="row-name"><span>Выберете напряжение АКБ:</span></td>
+        <td><%= select_tag :system_target, options_for_select({"автоматически" => "auto", "12"=> "12", "24"  => "24", "48" => "48"}) %>
+          В
+        </td>
+      </tr>
+      <tr class="even-row">
+        <td class="row-name"><span>Выберете емкость АКБ:</span></td>
+        <td><%= select_tag :system_target, options_for_select({"100"=> "100", "200"  => "200", "300" => "300"}) %>
+          А*час
+        </td>
+      </tr>
+      <tr class="odd-row">
+        <td class="row-name"><span>Выберете тип АКБ:</span></td>
+        <td><%= select_tag :system_target, options_for_select({"АВТ"=> "АВТ", "GEL"  => "GEL", "AGM" => "AGM"}) %></td>
+      </tr>
+      <tr class="even-row">
+        <td class="row-name"><span>Выберете степень разряда АКБ:</span></td>
+        <td><%= select_tag :system_target, options_for_select({"автоматически" => "auto", "50"=> "50", "60"  => "60", "70" => "70", "80" => "80", "90" => "90", "100" => "100"}) %></td>
+      </tr>
+      <tr class="odd-row">
+        <td class="row-name"><span>Введите необходимый запас энергии в АКБ:</span></td>
+        <td><%= text_field_tag :energy_content %>кВт*час</td>
+      </tr>
+      <tr class="even-row">
+        <td>
+          <span>Рекомендуемое напряжение АКБ:</span>
+        </td>
+        <td>
+          <label id="recommended_voltage_akb"></label>
+        </td>
+      </tr>
+      <tr class="odd-row">
+        <td><span>Расчетное количество АКБ:</span></td>
+        <td><label id="estimated_number_akb"></label></td>
+      </tr>
+      <tr>
+        <td><span>Расчетный запас энергии:</span></td>
+        <td><label id="estimated_amount_of_energy:"></label></td>
+      </tr>
+      <tr>
+        <td><span>Примерное время работы при средней нагрузке:</span></td>
+        <td><label id="estimated_time_average_load"></label></td>
+      </tr>
+      <tr>
+        <td><span>Рекомендуемый ящик</span></td>
+        <td><label id="recommended_box"></label></td>
+      </tr>
+      <tr>
+        <td><span>Необходимое количество ящиков</span></td>
+        <td><label id="necessary_number_boxes"></label></td>
+      </tr>
+      <tr>
+        <td colspan="2"><span>Выбор инвертора</span></td>
+      </tr>
+      <tr>
+        <td><span>Рекомендуемый тип инвертора:</span></td>
+        <td><label id="recommended_type_inverter"></label></td>
+      </tr>
+      <tr>
+        <td><span>Выберите тип инвертора</span></td>
+        <td><%= select_tag :type_inverter, options_for_select(Article::INVERTERS) %></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          Выбор ветрогенератора
+        </td>
+
+      </tr>
+      <tr>
+        <td>
+          Использовать ветроенератор?
+        </td>
+        <td>
+          <%= check_box_tag :use_wind_generator %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Задайте среднемесячную скорость ветра
+        </td>
+        <td>
+          <%= text_field_tag :avg_wind_speed %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Минимально необходимое количество для автономной работы
+        </td>
+        <td>
+          <label id="minimum_required_battery"></label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Задайте необходимое количество ветрогенераторов
+        </td>
+        <td>
+          <%= text_field_tag :number_wind_generators %>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Выработка за месяц, кВт*часов:</td>
+        <td><label id="month_kv_hour"></label>кв*Час</td>
+      </tr>
+      <tr>
+        <td>Потребность электроэнергии, кВт*час (за месяц):</td>
+        <td>
+          <label id="need_month_kv_hour">кв*Час(за месяц)</label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">Выбор солнечной батареи</td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+</div>

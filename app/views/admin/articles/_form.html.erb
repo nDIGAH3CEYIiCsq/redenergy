@@ -1,0 +1,33 @@
+<%= form_for [:admin, article] do |f| %>
+    <%= render "shared/error_messages", :target => article %>
+    <p>
+      <%= f.label :title %>: <%= f.text_field :title %>
+    </p>
+    <p>
+      <%= f.label :article_alias %>: <%= f.text_field :article_alias %>
+    </p>
+
+    <p>
+      <%= f.label :meta_description %>: <%= f.text_field :meta_description %>
+    </p>
+    <p>
+      <%= f.label :category %>: <%= f.text_field :category %>
+    </p>
+    <p>
+      <%= f.label :meta_title %>: <%= f.text_field :meta_title %>
+    </p>
+
+    <p>
+      <%= f.label :meta_keywords %>: <%= f.text_field :meta_keywords %>
+    </p>
+    <p>
+      <%= f.label :short_text %>: <%= f.text_area :short_text %>
+    </p>
+    <p>
+      <%= f.label :text %>: <%= f.text_area :text %>
+    </p>
+    <div id="updated"></div>
+    <p>
+      <%= f.submit("Save") %>
+    </p>
+<% end %>

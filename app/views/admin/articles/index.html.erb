@@ -1,0 +1,33 @@
+<div>
+  <%= link_to('Add new article', :action => 'new') %>
+</div>
+
+<div>
+  <table>
+    <thead>
+    <tr>
+      <th>Article_alias</th>
+      <th>Meta_title</th>
+      <th>Meta_keywords</th>
+      <th>Meta_description</th>
+      <th>Title</th>
+      <th>Category</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @articles.each do |article| %>
+        <tr>
+          <td><%= article.article_alias %></td>
+          <td><%= article.meta_title %></td>
+          <td><%= article.meta_keywords %></td>
+          <td><%= article.meta_description %></td>
+          <td><%= article.title %></td>
+          <td><%= article.category %> </td>
+          <td><%= link_to 'Edit', :action => 'edit', :id => article.id %></td>
+          <td><%= link_to "Delete", {:action=>'destroy', :id => article.id}, :confirm => "Are you sure?", :method => :delete %></td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

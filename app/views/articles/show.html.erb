@@ -1,0 +1,5 @@
+<%= content_for :page_name do %><%= @article.title.html_safe unless @article.nil? %><% end %>
+<%= content_for :title do %><%= @article.meta_title unless @article.nil? %><% end %>
+<%= content_for :keywords do %><%= @article.meta_keywords unless @article.nil? %><% end %>
+<%= content_for :description do %><%= @article.meta_description unless @article.nil? %><% end %>
+<div id="products"><%= @article.text.html_safe unless @article.nil? %></div>

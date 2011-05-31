@@ -1,0 +1,190 @@
+<% content_for :page_name do %>Каталог продукции
+<% end %>
+<% content_for :keywords do %>инверторы, автономное электрописание, бесперебойное электропитание, ветрогенераторы, МАП Энергия LCD, оптико-акустические датчики, КЭ-ДОА,акустические датчики,
+<% end %>
+<% content_for :description do %>Каталог продукции. Оптико-акустические датчики движения КЭ-ДОА. Аккумуляторные батареи. Инверторы. Ветрогенераторы. Системы автономного электропитания.
+<% end %>
+<% content_for :title do %>Каталог продукции - Оптико-акустические датчики движения КЭ-ДОА. Аккумуляторные батареи. Инверторы. Ветрогенераторы. Системы автономного электропитания.
+<% end %>
+<% invertors_url = url_for :controller => :catalog, :action => :invertors %>
+<div class="catalog-items">
+  <div>
+    <h1>Датчики движения</h1>
+
+    <div class="line">
+      <hr>
+    </div>
+    <div class="clear-both"></div>
+    <div class="catalog-item">
+      <a href="/catalog/optico-acust-ke-doa" title="Оптико-акустические датчики движения КЭ-ДОА">
+        <div class="body">
+          <img src="/images/products/optico-acust-ke-doa/small.png" alt="Оптико-акустические датчики движения КЭ-ДОА" title="Оптико-акустические датчики движения КЭ-ДОА"/>
+
+          <h2>Оптико-акустические датчики движения КЭ-ДОА</h2>
+        </div>
+      </a>
+    </div>
+    <div class="clear-both"></div>
+
+  </div>
+  <div>
+    <h1>Аккумуляторные батареи на основе технологии AGM</h1>
+
+    <div class="line">
+      <hr>
+    </div>
+    <div class="clear-both"></div>
+    <div class="catalog-item">
+      <a href="/catalog/batteries-hzb-6-12v" title="HZB 6, 12V Моноблок">
+        <div class="body">
+          <img src="/images/products/batteries-hzb-6-12v/small.png" alt="HZB 6, 12V Моноблок" title="HZB 6, 12V Моноблок"/>
+
+          <h2>HZB 6, 12V Моноблок</h2>
+        </div>
+      </a>
+    </div>
+    <div class="catalog-item">
+      <a href="/catalog/batteries-hzb-fa-12v" title="HZB FA 12V Моноблок">
+        <div class="body">
+          <img src="/images/products/batteries-hzb-fa-12v/small.png" alt="HZB FA 12V Моноблок" title="HZB FA 12V Моноблок"/>
+
+          <h2>HZB FA 12V Моноблок</h2>
+        </div>
+      </a>
+    </div>
+    <div class="catalog-item">
+      <a href="/catalog/batteries-hzs-4-6-12v" title="HZS 4, 6 & 12V Моноблок">
+        <div class="body">
+          <img src="/images/products/batteries-hzs-4-6-12v/small.png" alt="HZS 4, 6 & 12V Моноблок" title="HZS 4, 6 & 12V Моноблок"/>
+
+          <h2>HZS 4, 6 & 12V Моноблок</h2>
+        </div>
+      </a>
+    </div>
+    <div class="catalog-item">
+      <a href="/catalog/batteries-hzb-2v" title="HZB 2V Аккумулятор">
+        <div class="body">
+          <img src="/images/products/batteries-hzb-2v/small.png" alt="HZB 2V Аккумулятор" title="HZB 2V Аккумулятор"/>
+
+          <h2>HZB 2V Аккумулятор</h2>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="clear-both"></div>
+  <div class="catalog-items">
+    <h1>Инверторы, Ветрогенераторы</h1>
+
+    <div class="line">
+      <hr>
+    </div>
+    <div class="clear-both"></div>
+    <div class="catalog-item">
+      <a href="<%= invertors_url %>" title="Инверторы">
+        <img src="/images/products/invetors/small.png" alt="Инверторы" title="Инверторы"/>
+
+        <h2>Инверторы</h2>
+      </a>
+    </div>
+    <div class="catalog-item">
+      <a href="catalog/self-power-gas" title="Системы автономного электропитания (газ)">
+        <div class="body">
+          <img src="/images/products/self_power/small_gas.png" alt="Системы автономного электропитания (газ)" title="Системы автономного электропитания (газ)"/>
+
+          <h2>Системы автономного электропитания (газ)</h2>
+        </div>
+      </a>
+    </div>
+    <div class="catalog-item">
+      <a href="catalog/self-power-gasoline" title="Системы автономного электропитания (бензин)">
+        <div class="body">
+          <img src="/images/products/self_power/small_gasoline.png" alt="Системы автономного электропитания (бензин)" title="Системы автономного электропитания (бензин)"/>
+
+          <h2>Системы автономного электропитания (бензин)</h2>
+        </div>
+      </a>
+    </div>
+    <div class="catalog-item">
+      <a href=" <%= url_for :controller => :catalog, :action => :uninterruptible_power %>" title="Системы бесперебойного электропитания">
+        <div class="body">
+          <img src="/images/products/uninterruptible_power/small.png" alt="Системы бесперебойного электропитания" title="Системы бесперебойного электропитания"/>
+
+          <h2>Системы бесперебойного электропитания</h2>
+        </div>
+      </a>
+    </div>
+    <div class="catalog-item">
+      <a href="<%= url_for :controller => :catalog, :action => :wind_turbines %>" title="Ветрогенераторы">
+        <div class="body">
+          <img src="/images/products/wind_generator/small.png" alt="Ветрогенераторы" title="Ветрогенераторы"/>
+
+          <h2>Ветрогенераторы</h2>
+        </div>
+      </a>
+    </div>
+    <div class="catalog-item">
+      <a href="/catalog/led-lighting" title="LED светильники">
+        <div class="body">
+          <img src="/images/products/led_lighting/small.png" alt="LED светильники" title="LED светильники"/>
+
+          <h2>LED светильники</h2>
+        </div>
+      </a>
+    </div>
+    <div class="catalog-item">
+      <a href="/catalog/solar-panels" title="Солнечные батареи">
+        <div class="body">
+          <img src="/images/products/solar_panels/small.png" alt="Солнечные батареи" title="Солнечные батареи">
+
+          <h2>Солнечные батареи</h2>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="clear-both"></div>
+  <div class="catalog-items">
+    <h1>Аккумуляторные батареи на основе технологии GEL</h1>
+
+    <div class="line">
+      <hr>
+    </div>
+    <div class="clear-both"></div>
+    <div class="catalog-item">
+      <a href="/catalog/batteries-hzy-6-12v" title="HZY 6, 12V Моноблок">
+        <div class="body">
+          <img src="/images/products/batteries_hzy_6_gel/small.png" alt="GEL - HZY 6, 12V Моноблок" title="GEL - HZY 6, 12V Моноблок"/>
+
+          <h2>HZY 6, 12V Моноблок</h2>
+        </div>
+      </a>
+    </div>
+    <div class="catalog-item">
+      <a href="/catalog/batteries-hzy-fa-12v" title="HZY FA 12V Моноблок">
+        <div class="body">
+          <img src="/images/products/batteries_hzy_fa_12v/small.png" alt="HZY FA 12V Моноблок" title="HZY FA 12V Моноблок"/>
+
+          <h2>HZY FA 12V Моноблок</h2>
+        </div>
+      </a>
+    </div>
+    <div class="catalog-item">
+      <a href="/catalog/batteries-hzy-12v" title="HZY 2V Аккумулятор">
+        <div class="body">
+          <img src="/images/products/batteries_hzy-2v/small.png" alt="HZY 2V Аккумулятор" title="HZY 2V Аккумулятор"/>
+
+          <h2>HZY 2V Аккумулятор</h2>
+        </div>
+      </a>
+    </div>
+    <div class="catalog-item">
+      <a href="/catalog/batteries-traction" title="Тяговые аккумуляторы">
+        <div class="body">
+          <img src="/images/products/batteries_traction/small.png" alt="Тяговые аккумуляторы" title="Тяговые аккумуляторы"/>
+
+          <h2>Тяговые аккумуляторы</h2>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="clear-both"></div>
+</div>

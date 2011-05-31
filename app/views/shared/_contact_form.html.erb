@@ -1,0 +1,55 @@
+<div id="contacts" style="margin-top:-368px; overflow:hidden;">
+  <div id="contact-form" style="float:left; margin:10px">
+    <%= form_for :later, :html => {:id =>'contact_form_inner', :method =>:create}, :url => {:controller => :orders, :action=>:contact} do |f| %>
+        <fieldset style="padding: 0 0 15px 15px; margin: 0">
+          <legend>Обратная свзь</legend>
+          <div id="contact_form_first_column">
+            <label for="email" class='label'>E-mail:</label>
+            <label for="name" class='label'>Ваше имя:</label>
+          </div>
+          <div id="contact_form_second_column">
+            <%= f.text_field :email, :class=> 'text-field' %>
+            <%= f.text_field :name, :class=> 'text-field' %>
+          </div>
+          <div class="clear-both"></div>
+          <label for="message" class="label">*Сообщение:</label>
+          <%= f.text_area :message, :style=> "width:340px; height:100px" %>
+          <div id="message"></div>
+          <div style="width:100px;height:40px; ">
+            <a href="#" id="send_btn" class="btn send_btn hand">
+              <span style="padding:15px;">Отправить</span>
+            </a>
+          </div>
+          <div class="clear-both"></div>
+        </fieldset>
+    <% end %>
+  </div>
+  <div id="contact_info">
+    <p>
+      <span>Email:&nbsp;</span>
+      <a style="color:inherit;" href="malto:info@red-energy.ru" class="mail-antispam">ur.ygrene-der@ofni</a>
+    </p>
+
+    <p>
+      <span>Twitter:&nbsp;</span>
+      <a style="color:inherit" title="twitter" href="http://www.twitter.com/the_redenergy">the_redenergy</a>
+    </p>
+
+    <p>
+      <span>Skype:&nbsp;</span> the_redenergy
+    </p>
+
+    <p>
+      <span>ICQ:&nbsp;</span> 74368123
+    </p>
+
+    <p>
+      <span>Телефон:&nbsp;</span> 8 (915) 266-87-30
+    </p>
+
+    <p>
+      <span>Факс:&nbsp;</span> 8 (495) 775-82-12
+    </p>
+  </div>
+  <div class="clear-both"></div>
+</div>

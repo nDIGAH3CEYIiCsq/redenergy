@@ -1,0 +1,62 @@
+xml.instruct!
+
+xml.rss "version" => "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/" do
+ xml.channel do
+   xml.title       "red-energy.ru - Решения электроснабжения"
+   xml.link        url_for(:only_path =>false,:controller => :solutions, :action=> :index)
+   xml.description "red-energy.ru - Решения электроснабжения"
+   xml.item do
+      xml.title       "Автономное электроснабжения для дачи"
+      xml.link        url_for(:only_path => false, :controller => :solutions, :action => :ind_power_give)
+      xml.description "Большинство дачных домов имеют минимальный уровень комфорта - есть электричество и холодная вода. При этом все что
+      нужно для комфортного отдыха от городской жизни - телевизор, холодильник и освещение. Насосов отопления,
+      водоснабжения и прочего мощного оборудования, которому требуется постоянное мощное электричество нет. Но весной и
+      осенью часто выключается электричество. Скучно сидеть в темноте , без любимого сериала и, к тому же, пиво в
+      холодильнике нагревается"
+      xml.guid     url_for(:only_path => false, :controller => :solutions, :action => :ind_power_give)
+   end
+   xml.item do
+      xml.title       "Бесперебойное питание отопительных систем"
+      xml.link        url_for(:only_path => false, :controller => :solutions, :action => :unint_power_heating)
+      xml.description "Современные отопительные системы полностью автоматизированны и не требуют вмешателства человека
+      для отслеживания температуры и уровня подачи тепла. Но вся эта автоматика бесполезна припропадании электричества даже на несколько
+      минут. Пропадание питающего электричества может привезти к разморозке дома и, соответственно, к огромному
+      материальному ущербу. Обезопасить себя позволит недорогая система автономного питания отопительной системы."
+      xml.guid     url_for(:only_path => false, :controller => :solutions, :action => :unint_power_heating)
+   end
+
+   xml.item do
+      xml.title "Электрификация загородного дома"
+      xml.link  url_for(:only_path => false, :controller => :solutions, :action => :electrification_country_house)
+      xml.description "Жизнь в загородном доме это мечта любого горожанина. Вот только как обеспечить комфорт как в городской квартире?
+        Автономное электроснабжение для загородного дома сейчас не проблема. В большинстве случаев фирмы
+        поставщики рекомендуют устанавливать миниэлектростанции внутреннего сгорания работающие на дизельном топливе, бензине или
+        сжиженном/природном газе. Да, это решение достаточно недорого, надежно, но имеет кучу недостатков — постоянный шум
+        двигателя, невысокий ресурс, постоянное обслуживание и, наконец, запах выхлопных газов на фоне свежего загородного
+        воздуха."
+      xml.guid  url_for(:only_path => false, :controller => :solutions, :action => :electrification_country_house)
+   end
+
+    xml.item do
+      xml.title "Автономные системы"
+      xml.link  url_for(:only_path => false, :controller => :solutions, :action => :autonomous_system_stand_sol)
+      xml.description "Схема автономной системы элетроснабжения"
+      xml.guid  url_for(:only_path => false, :controller => :solutions, :action => :autonomous_system_stand_sol)
+    end
+
+   xml.item do
+     xml.title "Система бесперебойного электроснабжения"
+     xml.link  url_for(:only_path => false, :controller => :solutions, :action => :uninterrupted_power_supply_stand_sol)
+     xml.description "Схема системы бесперебойного электроснабжения"
+     xml.guid  url_for(:only_path => false, :controller => :solutions, :action => :uninterrupted_power_supply_stand_sol)
+  end
+
+   xml.item do
+     xml.title "Система энергосберегающего освещения для ЖКХ LED"
+     xml.link  url_for(:only_path => false, :controller => :solutions, :action => :energy_efficient_lighting_jkh_220v_50hz)
+     xml.description "Система энергосберегающего освещения для ЖКХ LED"
+     xml.guid  url_for(:only_path => false, :controller => :solutions, :action => :energy_efficient_lighting_jkh_220v_50hz)
+  end
+
+ end
+end

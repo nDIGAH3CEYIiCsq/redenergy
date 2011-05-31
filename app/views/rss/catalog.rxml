@@ -1,0 +1,162 @@
+xml.instruct!
+
+xml.rss "version" => "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/" do
+ xml.channel do
+   xml.title       "red-energy.ru - Каталог"
+   xml.link        url_for(:only_path =>false,:controller => :catalog, :action=> :index)
+   xml.description "red-energy.ru - Каталог"
+   xml.item do
+      xml.title       "Серия энергосберегающих светодиодных светильников  КЭ-ССД-184(А)"
+      xml.link        url_for(:only_path => false, :controller => :catalog, :action => :led_lighting)
+      xml.description "Энергосберегающий светодиодный светильник серии
+		КЭ-ССД-184(А) предназначен для замены устаревших светильников с
+		лампами накаливания или люминесцентными лампами. Он может устанавливаться на стенах, потолках подъездных,
+		офисных, производственных, складских помещений, магазинов и т. п."
+      xml.guid     url_for(:only_path => false, :controller => :catalog, :action => :led_lighting)
+   end
+
+   xml.item do
+      xml.title   "Системы бесперебойного электропитания 2,0 / 3,0 / 4,5 / 6,0 / 8,8 / 12,0 кВт"
+      xml.link    url_for(:only_path => false, :controller => :catalog, :action => :uninterruptible_power)
+      xml.description "Система состоит из преобразователя постоянного напряжения 12В (24, 48) в переменное 220В 50Гц и
+		комплекта аккумуляторных батарей. Преобразователь совмещает в себе функции инвертора,
+		источника бесперебойного питания и
+		зарядного устройства. В штатном режиме система использует 220В от электросети, в случае перебоя подачи
+		электричества включается инвертор, который вырабатывает 220В 50 Гц от аккумуляторов. После
+		восстановления сетевого 220В инвертор осуществляет подзарядку аккумуляторов."
+      xml.guid     url_for(:only_path => false, :controller => :catalog, :action => :uninterruptible_power)
+   end
+
+   xml.item do
+      xml.title   "Инверторы МАП SIN Энергия"
+      xml.link    url_for(:only_path => false, :controller => :catalog, :action => :invertors)
+      xml.description "МАП Энергия SIN представляет собой многофункциональный преобразователь постоянного напряжения (инвертор
+          напряжения) аккумуляторной батареи 12/24/48В в переменное напряжение 220В с частотой 50Гц, с фун
+          кцией мощного заряда АКБ, и предназначен для питания различных потребителей электроэнергии (электроинструмент, бытовые
+          электроприборы, радиоаппаратура и т.д.). Инвертор МАП Энергия SIN - это хорошее решения для организации бесперебойного питания
+          при аварийных отключениях в электросетях."
+      xml.guid     url_for(:only_path => false, :controller => :catalog, :action => :invertors)
+   end
+
+   xml.item do
+      xml.title   "Ветроэлектрическая установка КЭ-ВГ-1000-24"
+      xml.link    url_for(:only_path => false, :controller => :catalog, :action => :wind_turbines)
+      xml.description "Лучшее решение проблем с электичеством для коттеджа и дачи. Ветроэлектрическая установка КЭ-ВГ-1000-24 предназначена для использования в качестве
+	    автономного источника электроэнергии и может работать: В буферном режиме с аккумуляторной батарей для питания электроприборов постоянного тока напряжением 24 В, мощностью до 1000 Вт;
+		В режиме без <strong>аккумуляторной батареи."
+      xml.guid     url_for(:only_path => false, :controller => :catalog, :action => :wind_turbines)
+   end
+
+   xml.item do
+      xml.title   "Стационарные аккумуляторные батареи"
+      xml.link    url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzb_6_12v)
+      xml.description "Необслуживаемые герметизированные свинцово-кислотные аккумуляторные батареи Haze HZB
+		изготовлены с высочайшими стандартами качества. Отсутствует необходимость технического обслуживания аккумуляторных батарей. Аккумуляторы Haze устойчивы к глубокому разряду в соответствии c DIN 43539 T5"
+      xml.guid     url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzb_6_12v)
+   end
+
+   xml.item do
+      xml.title   "Фронтальные стационарные аккумуляторные батареи"
+      xml.link    url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzb_fa_12v)
+      xml.description "Аккумуляторы Haze предназначены для эксплуатации в системах резервирования энергии,
+		инверторных системах бесперебойного питания. Батареи имеют низкий
+		уровень саморазряда и не требует обслуживания за весь период работы. Аккумуляторы
+		обладают большой энергоемкостью, эффективно работают как в буферном режиме (режим подзарядки),
+		так и в режиме цикличности (заряд/разряд) при глубокой степени разряда."
+      xml.guid     url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzb_fa_12v)
+   end
+
+   xml.item do
+      xml.title   "Герметизированные свинцово-кислотные аккумуляторные батареи. Технология AGM"
+      xml.link    url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzs_4_6_12v)
+      xml.description "Герметизированные свинцово-кислотные аккумуляторные батареи. Технология AGM."
+      xml.guid     url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzs_4_6_12v)
+   end
+
+   xml.item do
+      xml.title   "Герметизированные свинцово-кислотные аккумуляторы"
+      xml.link    url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzb_2v)
+      xml.description "Самым лучшим брендом на рынке аккумуляторной продукции нашей страны в соотношении высокого
+		качества и относительно низких цен является компания Haze. Аккумуляторы Haze 2, 4, 6, 12 вольт
+		изготавливаются по технологиям GEL и AGM. Данный бренд, центральный офис которого находится в Великобритании, хорошо известен не только в Европе, но и в
+		Азии и в Северной Америке. Продукция HAZE широко используется практически во всех отраслях человеческой деятельности."
+      xml.guid     url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzb_2v)
+   end
+
+   xml.item do
+      xml.title   "Стационарные аккумуляторные батареи"
+      xml.link    url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzy_6_12v)
+      xml.description "Конструкция аккумуляторной батареи Haze HZYxx исключает необходимость в корректировки гелевого
+		электролита и обеспечивает безуходность его в период расчетного срока службы – 12 лет"
+      xml.guid     url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzy_6_12v)
+   end
+
+   xml.item do
+      xml.title   "Стационарные аккумуляторные батареи"
+      xml.link    url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzy_fa_12v)
+      xml.description "Герметичные аккумуляторы HAZE HZY FA, (технология GEL)"
+      xml.guid     url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzy_fa_12v)
+   end
+
+   xml.item do
+      xml.title   "Стационарные аккумуляторы"
+      xml.link    url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzy_12v)
+      xml.description "Необслуживаемые аккумуляторные батареи HAZE изготовлены на основе технологии GEL.
+		Конструкция аккумуляторной батареи Haze HZYxx исключает необходимость
+		в корректировки гелевого электролита и обеспечивает безуходность его в период расчетного срока службы – 12 лет."
+      xml.guid     url_for(:only_path => false, :controller => :catalog, :action => :batteries_hzy_12v)
+   end
+
+   xml.item do
+      xml.title   "Аккумуляторные батареи серии EV для электромашин"
+      xml.link    url_for(:only_path => false, :controller => :catalog, :action => :batteries_traction)
+      xml.description "Тяговые аккумуляторы производятся в соответствии с требованиями Европейских стандартов
+		и применяются для всех видов напольного электротранспорта"
+      xml.guid     url_for(:only_path => false, :controller => :catalog, :action => :batteries_traction)
+   end
+
+   xml.item do
+      xml.title   "Системы автономного электропитания 3,0 / 4,3 кВт на базе газо-генератора"
+      xml.link    url_for(:only_path => false, :controller => :catalog, :action => :self_power_gas)
+      xml.description "Принцип работы cистемы. На первоначальной стадии система вырабатывает напряжение 220В 50Гц при помощи <strong>инвертора МАП</strong> &laquo;Энергия&raquo;
+		от аккумуляторных батарей. Спустя некоторое время, когда заряд АКБ приблизится к своему минимому,
+		система автоматического пуска активирует работу газо-генератора. Газо-генератор, в свою очередь, будет работать
+		до тех пор, пока не восстановится заряд <strong>аккумуляторных батарей. В этот момент напряжение 220В 50Гц на нагрузку
+		поступает от газо-генератора. Потом цикл работы системы повторяется."
+      xml.guid     url_for(:only_path => false, :controller => :catalog, :action => :self_power_gas)
+   end
+
+   xml.item do
+      xml.title   "Системы автономного электропитания 2,8 / 4,0 / 5,0 кВт на базе бензо-генератора"
+      xml.link    url_for(:only_path => false, :controller => :catalog, :action => :self_power_gasoline)
+      xml.description "Принцип работы. На первоначальной стадии система вырабатывает напряжение 220В 50Гц при помощи <strong>инвертора МАП &laquo;Энергия&raquo;</strong>
+		от аккумуляторных батарей. Спустя некоторое время, когда заряд АКБ приблизится к своему
+		минимому, система автоматического пуска активирует работу бензо-генератора. Бензо-генератор, в свою очередь, будет
+		работать до тех пор, пока не восстановится заряд аккумуляторных батарей. В этот момент напряжение 220В 50Гц на
+		нагрузку поступает от бензо-генератора. Потом цикл работы системы повторяется."
+      xml.guid     url_for(:only_path => false, :controller => :catalog, :action => :self_power_gasoline)
+   end
+
+    xml.item do
+      xml.title   "Cолнечные батареи"
+      xml.link    url_for(:only_path => false, :controller => :catalog, :action => :solar_panels)
+      xml.description "Преобразовывая солнечный свет в электрический ток, который может использоваться
+		непосредственно действующими нагрузками, так и накапливаться в аккумуляторных батареях. Следует учесть, что
+		солнечные батареи вырабатывают постоянный ток и для оптимальной эксплуатации солнечной системы необходим MPPT
+		контроллер. В настоящее время наиболее используемые солнечные батареи имеют мощность 50-170 Вт.
+		Панели устойчивы к механическим повреждениям и влагоустойчивы. Срок службы панели - порядка 20 лет."
+      xml.guid     url_for(:only_path => false, :controller => :catalog, :action => :solar_panels)
+    end
+
+   xml.item do
+      xml.title   "Серия оптико-акустических датчиков движения КЭ-ДОА"
+      xml.link    url_for(:only_path => false, :controller => :catalog, :action => :optico_acust_ke_doa)
+      xml.description "  Выключатель энергосберегающий оптико-акустический КЭ-ДОА-01(М), используется с любыми видами ламп
+    мощностью до 250 Вт, предназначен для автоматического включения освещения вспомогательных
+    помещений: лестничных проёмов, переходов, лифтовых холлов и других помещений с временным пребыванием людей в
+    общественных и жилых зданиях. Выключатели предназначены для индивидуальной установки на стене или
+    потолке."
+      xml.guid     url_for(:only_path => false, :controller => :catalog, :action => :optico_acust_ke_doa)
+   end
+ end
+ end

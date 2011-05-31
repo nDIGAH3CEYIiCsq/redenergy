@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus Target 1.0//EN" "http://shop.millionmenu.ru/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+	<!-- base href="<%= "http://" + request.host + ":" + request.port.to_s() %>" -->
+	<%= application_javascript %>
+	<%= application_stylesheets %>
+	<%= csrf_meta_tag %>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta http-equiv="Content-Type" content="text/html; utf-8"/>
+    <meta name='yandex-verification' content='43636dbe5b042997' />
+    <meta name="google-site-verification" content="YTVH2BRNbsNSdnRSmkyQDbf2Ox4RjCXXQ_jl0Wwdsgg" />
+	<meta name="language" content="ru"/>
+	<meta name="copyright" content="Все права защищены <%= Time.now.year %> - НПП Красная Энергия"/>
+	<meta name="author" content="НПП Красная Энергия"/>
+	<meta name="keywords" content="<%= yield :keywords %> - НПП Красная Энергия"/>
+	<meta name="description" content="<%= yield :description %> - НПП Красная Энергия"/>
+	<link rel="icon" href="/images/base/favicon.ico" type="image/x-icon"/>
+	<title><%= yield :title %> - НПП Красная Энергия</title>
+</head>
+<body>
+<%= render "shared/contact_form" %>
+<div class="clear-both"></div>
+<div id="venous_header"></div>
+<div id="header-line">
+	<div class="first-header-line"></div>
+	<div class="second-header-line"></div>
+</div>
+<div id="main_header">
+	<%= render "shared/top_menu" %>
+	<div id="logo">
+		<a href="/"><span></span></a>
+	</div>
+	<div id="main-contacts">
+		<div class="phone">
+			<img src="/images/base/phone.png" alt="telephone" />
+			<span>8 (915) 266-87-30, (495) 775 82 12</span>
+		</div>
+		<div id="icq">
+			<img src="/images/base/icq.png" alt="icq" />
+			<a href="http://wwp.icq.com/scripts/contact.dll?msgto=74368123">
+			<span>74368123</span></a>
+		</div>
+	</div>
+	<%= render "shared/main_menu" %>
+	<form id="search" action="/search" method="GET">
+		<div><input name="search_text" type="text"/></div>
+	</form>
+	<strong id="slogan">Научно-производственное предприятие</strong>
+	<div id="description_head">
+		Мы занимаемся <strong>проектированием, изготовлением, монтажом и обслуживанием систем
+		автономного и бесперебойного питания</strong>.
+	</div>
+</div>
+<div id="parent-body">
+	<div id="body">
+		<div id="head-shadow"></div>
+		<div id="background-line-top"></div>
+		<div id="up-line">
+			<a class="feedback" href="<%= url_for :controller => :orders, :action=>:index %>">Оформить заявку</a>
+			<span class="page-name"><%= yield :page_name %></span> 
+		</div>
+
+		<div id="content">
+			<%= yield %>
+		</div>
+	</div>
+	<div id="footer-body-margin"></div>
+</div>
+<div id="footer-zone">
+	<div id="footer-wrapper">
+		<div id="footer">
+			<ul>
+				<li>&copy; <%= DateTime.now().year %> НПП Красная Энергия</li>
+				<li><a href="/company">Контакты</a></li>
+				<li><a id="feedback" href="#">Обратная связь</a></li>
+			</ul>
+            <div id="counters">
+                <div class="counter">
+                    <!-- begin of Top100 code -->
+                    <script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?2345172"></script>
+                    <noscript>
+                    <a href="http://top100.rambler.ru/navi/2345172/">
+                    <img src="http://counter.rambler.ru/top100.cnt?2345172" alt="Rambler's Top100" border="0" />
+                    </a>
+                    </noscript>
+                    <!-- end of Top100 code -->
+                </div>
+                <div class="counter">
+                    <!--&lt;!&ndash;LiveInternet counter&ndash;&gt;-->
+                    <script type="text/javascript"><!--
+                    document.write("<a href='http://www.liveinternet.ru/click' "+
+                    "target=_blank><img src='//counter.yadro.ru/hit?t26.9;r"+
+                    escape(document.referrer)+((typeof(screen)=="undefined")?"":
+                    ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+                    screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+                    ";"+Math.random()+
+                    "' alt='' title='LiveInternet: показано число посетителей за"+
+                    " сегодня' "+
+                    "border='0' width='88' height='15'><\/a>");
+                    //--></script><!--/LiveInternet-->
+			    </div>
+                <div class="counter">
+                  <!-- LiveRSS -->
+                    <a href="http://liverss.ru/"><img src="http://liverss.ru/i/liverss8815.gif" width="88" height="15" alt="LiveRSS: Каталог русскоязычных RSS-каналов" style="border:0;" /></a>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	Home.Index.init();
+</script>
+<!-- Google Analytics -->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-16042142-3']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+</script>
+<!-- -->

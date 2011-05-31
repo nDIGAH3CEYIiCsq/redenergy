@@ -1,0 +1,49 @@
+<%= content_for :page_name do %>
+	Поиск
+<% end %>
+<%= content_for :title do %>
+	Красная Энергия - Поиск
+<% end %>
+<div id="products">
+	<div id="product">
+		<div id="cse" style="width: 100%;">Loading</div>
+	</div>
+</div>
+
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+
+<script type="text/javascript">
+	google.load('search', '1', {language : 'ru'});
+
+
+	function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+		var regexS = "[\\?&]" + name + "=([^&#]*)";
+		var regex = new RegExp(regexS);
+		var results = regex.exec(window.location.href);
+		if (results == null)
+			return "";
+		else
+			return decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+
+	google.setOnLoadCallback(function() {
+		var customSearchControl = new google.search.CustomSearchControl('006607667499315256820:qvh34dznfqe');
+		customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+		var options = new google.search.DrawOptions();
+		options.setAutoComplete(true);
+		customSearchControl.draw('cse', options);
+		var searchText = getParameterByName("search_text");
+
+		customSearchControl.execute(searchText);
+	}, true);
+
+</script>
+<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css"/>
+<script type="text/javascript">
+	Search.Index.init();
+</script>
+
+
+

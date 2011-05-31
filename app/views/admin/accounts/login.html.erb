@@ -1,0 +1,25 @@
+<div>
+  <%= form_for :user do |f| %>
+      <fieldset>
+        <legend>Please log in</legend>
+        <p>
+          <%= f.label "E-mail:" %>
+          <%= f.text_field :e_mail %>
+        </p>
+
+        <p>
+          <%= f.label "Password:" %>
+          <%= f.password_field 'password' %>
+        </p>
+
+        <p>
+          <%= f.submit "Login" %>
+        </p>
+      </fieldset>
+  <% end %>
+</div>
+ <% if flash[:notice] -%>
+    <div>
+      <%= flash[:notice] %>
+    </div>
+  <%end -%>
