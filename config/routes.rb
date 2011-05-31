@@ -76,11 +76,11 @@ Empty::Application.routes.draw do
 
 	match "orders/new" => "orders#index"
 
-	match "catalog/led-lighting" => "catalog#led_lighting"
+	match "catalog/led_lighting" => "catalog#led_lighting"
 	match "catalog/uninterruptible_power" => "catalog#uninterruptible_power"
 	match "catalog/invertors" => "catalog#invertors"
 	match "catalog/wind-turbins" => "catalog#wind_turbines"
-  mathc "catalog/wind_generator" => "catalog#wind_generator"
+  match "catalog/wind_generator" => "catalog#wind_generator"
 	#match "catalog/batteries-hzy-6-gel" => "catalog#batteries_hzy_6_gel"
 	#match "catalog/batteries-hzy-12-gel" => "catalog#batteries_hzy_12_gel"
 #	match "catalog/batteries-hzy-2-gel" => "catalog#batteries_hzy_2_gel"
@@ -95,7 +95,7 @@ Empty::Application.routes.draw do
 	match "catalog/self_power_gas" => "catalog#self_power_gas"
 	match "catalog/self_power_gasoline" => "catalog#self_power_gasoline"
 	match "catalog/solar-panels" => "catalog#solar_panels"
-	match "catalog/optico-acust-ke-doa" => "catalog#optico_acust_ke_doa"
+	match "catalog/optico_acust_ke_doa" => "catalog#optico_acust_ke_doa"
   match "catalog/led_lighting_ke_ccd_184" => "catalog#led_lighting_ke_ccd_184"
   match "catalog/led_lighting_ke_ccd_star" => "catalog#led_lighting_ke_ccd_star"
   match "catalog/led_lighting_ke_ccd_tl418_cl1_2400" => "catalog#led_lighting_ke_ccd_tl418_cl1_2400"
