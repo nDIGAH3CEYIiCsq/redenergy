@@ -337,11 +337,6 @@ A.menu-item-main:visited {
 
 }
 
-/*#send_btn {*/
-/*margin: 14px 10px 0 0;*/
-/*float: right;*/
-/*}*/
-
 .btn:hover {
     background: url('/images/base/contact_btn_bg_hover.png') repeat-x scroll #d4451d;
     padding: 13px;
@@ -628,24 +623,34 @@ A.menu-item-main:visited {
 
 /* Inventories */
 
-#product h1 {
-    margin: 0 0 10px 0;
+#product {
+
+    min-height: 400px;
+    h1 {
+        margin: 0 0 10px 0;
     text-align: center;
     font-size: 17px;
     font-weight: normal;
-}
+    }
 
-#product h2 {
-    text-align: center;
-    font-size: 15px;
-}
+    h2 {
+        text-align: center;
+        font-size: 15px;
+    }
 
-#product TABLE TD {
-    border: 1px solid #99999a;
-}
+    TABLE {
+        margin: auto;
+    }
 
-#product TABLE {
-    margin: auto;
+    TABLE TD {
+        border: 1px solid #99999a;
+    }
+
+    .menu-item {
+        display:block;
+        margin-top: 10px;
+    }
+
 }
 
 #solution-item DIV {

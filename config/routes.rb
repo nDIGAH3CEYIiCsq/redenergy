@@ -95,6 +95,9 @@ Empty::Application.routes.draw do
 	match "catalog/self-power-gasoline" => "catalog#self_power_gasoline"
 	match "catalog/solar-panels" => "catalog#solar_panels"
 	match "catalog/optico-acust-ke-doa" => "catalog#optico_acust_ke_doa"
+  match "catalog/led_lighting_ke_ccd_184" => "catalog#led_lighting_ke_ccd_184"
+  match "catalog/led_lighting_ke_ccd_star" => "catalog#led_lighting_ke_ccd_star"
+  match "catalog/led_lighting_ke_ccd_tl418_cl1_2400" => "catalog#led_lighting_ke_ccd_tl418_cl1_2400"
 
 	match "catalog/:alias" => "articles#show"
 

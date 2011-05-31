@@ -17,27 +17,23 @@ class CatalogController < ApplicationController
 
 	def invertors
 
-	end
+  end
+
+  def led_lighting_ke_ccd_tl418_cl1_2400
+
+  end
+
+  def led_lighting_ke_ccd_star
+
+  end
+
+  def led_lighting_ke_ccd_184
+
+  end
 
 	def wind_turbines
 
 	end
-#
-#	def batteries_hzy_6_gel
-#
-#	end
-
-#	def batteries_hzy_12_gel
-#
-#	end
-
-#	def batteries_hzy_2_gel
-#
-#	end
-
-#	def traction_batteries
-#
-#	end
 
 	def batteries_hzb_6_12v
 
