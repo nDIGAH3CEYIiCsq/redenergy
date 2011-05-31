@@ -623,34 +623,29 @@ A.menu-item-main:visited {
 
 /* Inventories */
 
-#product {
-
-    min-height: 400px;
-    h1 {
-        margin: 0 0 10px 0;
+#product h1 {
+    margin: 5px 5px 10px 0;
     text-align: center;
     font-size: 17px;
-    font-weight: normal;
-    }
+}
 
-    h2 {
-        text-align: center;
-        font-size: 15px;
-    }
+#product h2 {
+    text-align: center;
+    font-size: 15px;
+     margin: 5px 5px 10px 0;
+}
 
-    TABLE {
-        margin: auto;
-    }
+#product TABLE TD {
+    border: 1px solid #99999a;
+}
 
-    TABLE TD {
-        border: 1px solid #99999a;
-    }
+#product TABLE {
+    margin: auto;
+}
 
-    .menu-item {
-        display:block;
-        margin-top: 10px;
-    }
-
+#product .menu-item {
+    display:block;
+    margin-top: 10px;
 }
 
 #solution-item DIV {
