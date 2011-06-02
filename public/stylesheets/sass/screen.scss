@@ -739,9 +739,24 @@ A.menu-item-main:visited {
 #product .product-description {
     margin: 0 0 10px 0;
     font-size: 13px;
-    background-color: #ffefc7;
+   // background-color: #ffefc7;
     padding: 4px;
     line-height: 25px;
+    font-weight:bold;
+
+    strong {
+        font-weight:bold;
+    }
+}
+
+#product li {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.product-main-image {
+    float:left;
+    margin-right: 10px;
 }
 
 #product .description-table td {
@@ -759,6 +774,10 @@ A.menu-item-main:visited {
 
 #product a:active {
     color: inherit;
+}
+
+.product-header-description {
+    overflow:hidden;
 }
 
 #product {

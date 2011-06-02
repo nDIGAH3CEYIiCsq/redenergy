@@ -909,44 +909,65 @@ A.menu-item-main:visited {
 #product .product-description {
   margin: 0 0 10px 0;
   font-size: 13px;
-  background-color: #ffefc7;
   padding: 4px;
   line-height: 25px;
+  font-weight: bold;
+}
+/* line 747, sass/screen.scss */
+#product .product-description strong {
+  font-weight: bold;
 }
 
-/* line 747, sass/screen.scss */
+/* line 752, sass/screen.scss */
+#product li {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+/* line 757, sass/screen.scss */
+.product-main-image {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 762, sass/screen.scss */
 #product .description-table td {
   padding: 3px;
 }
 
-/* line 751, sass/screen.scss */
+/* line 766, sass/screen.scss */
 #product .description-price {
   margin: 20px;
   color: red;
 }
 
-/* line 756, sass/screen.scss */
+/* line 771, sass/screen.scss */
 #product a {
   color: inherit;
 }
 
-/* line 760, sass/screen.scss */
+/* line 775, sass/screen.scss */
 #product a:active {
   color: inherit;
 }
 
-/* line 766, sass/screen.scss */
+/* line 779, sass/screen.scss */
+.product-header-description {
+  overflow: hidden;
+}
+
+/* line 785, sass/screen.scss */
 #product .production-list li {
   color: #9f0000;
   line-height: 200%;
   font-size: 15px;
 }
-/* line 771, sass/screen.scss */
+/* line 790, sass/screen.scss */
 #product .production-list li a:hover {
   text-decoration: none;
 }
 
-/* line 778, sass/screen.scss */
+/* line 797, sass/screen.scss */
 .description-table th {
   font-weight: normal;
   border: 1px solid #bbb8b8;
@@ -954,17 +975,17 @@ A.menu-item-main:visited {
   padding: 2px;
 }
 
-/* line 786, sass/screen.scss */
+/* line 805, sass/screen.scss */
 .description-table td {
   text-align: center;
 }
 
-/* line 790, sass/screen.scss */
+/* line 809, sass/screen.scss */
 .catalog-items {
   margin: 10px auto 0 auto;
 }
 
-/* line 794, sass/screen.scss */
+/* line 813, sass/screen.scss */
 .catalog-items h1 {
   font-size: 20px;
   font-weight: normal;
@@ -976,32 +997,32 @@ A.menu-item-main:visited {
   padding: 0 15px 0 0;
 }
 
-/* line 805, sass/screen.scss */
+/* line 824, sass/screen.scss */
 .catalog-items .line {
   padding: 20px 0 11px;
 }
 
-/* line 809, sass/screen.scss */
+/* line 828, sass/screen.scss */
 .catalog-items hr {
   background-color: #ffe5e5;
   border: 0 solid #ffe5e5;
   height: 6px;
 }
 
-/* line 815, sass/screen.scss */
+/* line 834, sass/screen.scss */
 .catalog-item h2 {
   font-size: 14px;
   color: #3C3C3C;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7);
 }
 
-/* line 821, sass/screen.scss */
+/* line 840, sass/screen.scss */
 .catalog-item:hover {
   background: #efefef;
   cursor: pointer;
 }
 
-/* line 826, sass/screen.scss */
+/* line 845, sass/screen.scss */
 #twitter {
   /*width: 828px;*/
   margin: 10px 0 0 0;
@@ -1014,55 +1035,55 @@ A.menu-item-main:visited {
   font-size: 14px;
 }
 
-/* line 838, sass/screen.scss */
+/* line 857, sass/screen.scss */
 #twitter h2 {
   float: left;
   font-size: 16px;
   margin: 5px 5px 5px 5px;
 }
 
-/* line 844, sass/screen.scss */
+/* line 863, sass/screen.scss */
 #twitter img {
   float: left;
   margin: 0 0 10px 0;
 }
 
-/* line 849, sass/screen.scss */
+/* line 868, sass/screen.scss */
 #twitter a {
   color: #666666;
   cursor: pointer;
   text-decoration: none;
 }
 
-/* line 855, sass/screen.scss */
+/* line 874, sass/screen.scss */
 #twitter a:visited {
   color: #666666;
   cursor: pointer;
   text-decoration: none;
 }
 
-/* line 861, sass/screen.scss */
+/* line 880, sass/screen.scss */
 #twiiter a:hover {
   text-decoration: underline;
 }
 
-/* line 865, sass/screen.scss */
+/* line 884, sass/screen.scss */
 .tweet {
   padding: 10px;
 }
 
-/* line 869, sass/screen.scss */
+/* line 888, sass/screen.scss */
 #product fieldset {
   border: none;
 }
 
-/* line 873, sass/screen.scss */
+/* line 892, sass/screen.scss */
 .table {
   border: 0;
   width: 800px;
 }
 
-/* line 879, sass/screen.scss */
+/* line 898, sass/screen.scss */
 .table td {
   -moz-background-clip: border;
   -moz-background-inline-policy: continuous;
@@ -1072,81 +1093,81 @@ A.menu-item-main:visited {
   padding: 15px 10px 0 0;
 }
 
-/* line 887, sass/screen.scss */
+/* line 906, sass/screen.scss */
 .table tr {
   height: 40px;
 }
 
-/* line 891, sass/screen.scss */
+/* line 910, sass/screen.scss */
 .table td span {
   margin: 0 0 0 20px;
 }
 
-/* line 895, sass/screen.scss */
+/* line 914, sass/screen.scss */
 .odd-row {
   background: #fdf6f6;
 }
 
-/* line 899, sass/screen.scss */
+/* line 918, sass/screen.scss */
 .even-row {
   background: #f6f9fd;
 }
 
-/* line 903, sass/screen.scss */
+/* line 922, sass/screen.scss */
 .table td input {
   margin: 0 5px 10px 0;
 }
 
-/* line 907, sass/screen.scss */
+/* line 926, sass/screen.scss */
 .row-head {
   background: #e4e4e4;
 }
 
-/* line 911, sass/screen.scss */
+/* line 930, sass/screen.scss */
 .row-head a {
   color: gray;
 }
 
-/* line 916, sass/screen.scss */
+/* line 935, sass/screen.scss */
 .table td select {
   margin: 0 5px 10px 0;
 }
 
-/* line 920, sass/screen.scss */
+/* line 939, sass/screen.scss */
 .row-name {
   width: 340px;
 }
 
-/* line 924, sass/screen.scss */
+/* line 943, sass/screen.scss */
 .margin-auto {
   margin: 0 auto;
 }
 
-/* line 928, sass/screen.scss */
+/* line 947, sass/screen.scss */
 .pay-description {
   background: #ed0606;
   margin: 20px 0 10px 0;
   padding: 10px 0 10px 0;
 }
 
-/* line 935, sass/screen.scss */
+/* line 954, sass/screen.scss */
 .catalog-table td {
   text-align: center;
 }
 
-/* line 939, sass/screen.scss */
+/* line 958, sass/screen.scss */
 .catalog-table thead th {
   /*padding: 2px;*/
   border: 1px solid #99999A;
   font-weight: normal;
 }
 
-/* line 945, sass/screen.scss */
+/* line 964, sass/screen.scss */
 .catalog-table td {
   padding: 5px;
 }
 
-/* line 949, sass/screen.scss */
+/* line 968, sass/screen.scss */
 .catalog-table .row-header {
   background: #f7dc8a;
   font-size: 12px;
@@ -1156,45 +1177,45 @@ A.menu-item-main:visited {
   text-align: center;
 }
 
-/* line 958, sass/screen.scss */
+/* line 977, sass/screen.scss */
 .catalog-table thead tr {
   background: #ffa800;
 }
 
-/* line 962, sass/screen.scss */
+/* line 981, sass/screen.scss */
 td.td-header {
   background-color: #ffa800;
   font-size: 11px;
 }
 
-/* line 967, sass/screen.scss */
+/* line 986, sass/screen.scss */
 .catalog-row {
   background: #fdb824;
   /*font-weight:bold;*/
 }
 
-/* line 971, sass/screen.scss */
+/* line 990, sass/screen.scss */
 .catalog-table tr {
   background: #f6f5f4;
 }
 
-/* line 975, sass/screen.scss */
+/* line 994, sass/screen.scss */
 .comments {
   font-size: 10px;
   color: #bcbcbc;
 }
 
-/* line 980, sass/screen.scss */
+/* line 999, sass/screen.scss */
 .comments a {
   color: #bcbcbc;
 }
 
-/* line 985, sass/screen.scss */
+/* line 1004, sass/screen.scss */
 .comments h1 {
   font-size: 12px;
 }
 
-/* line 989, sass/screen.scss */
+/* line 1008, sass/screen.scss */
 .success-order h1 {
   color: #D16F6F;
   font-size: 20px;
@@ -1203,20 +1224,20 @@ td.td-header {
   padding: 15px 0 10px 10px;
 }
 
-/* line 997, sass/screen.scss */
+/* line 1016, sass/screen.scss */
 .success-order .message {
   font-size: 15px;
   margin: 10px 0 150px 10px;
 }
 
-/* line 1002, sass/screen.scss */
+/* line 1021, sass/screen.scss */
 .article H1 {
   font-size: 20px;
   font-weight: normal;
   margin: 30px 0 20px 0;
 }
 
-/* line 1008, sass/screen.scss */
+/* line 1027, sass/screen.scss */
 .article H2 {
   font-size: 15px;
   color: #000000;
@@ -1224,22 +1245,22 @@ td.td-header {
   text-align: center;
 }
 
-/* line 1015, sass/screen.scss */
+/* line 1034, sass/screen.scss */
 .article TABLE TD {
   border: 1px solid #99999a;
 }
 
-/* line 1019, sass/screen.scss */
+/* line 1038, sass/screen.scss */
 .article TABLE {
   margin: auto;
 }
 
-/* line 1023, sass/screen.scss */
+/* line 1042, sass/screen.scss */
 .article A {
   color: inherit;
 }
 
-/* line 1027, sass/screen.scss */
+/* line 1046, sass/screen.scss */
 .item-marker {
   background: transparent url("/images/base/marker.png") no-repeat scroll 0 0;
   width: 10px;
@@ -1249,25 +1270,25 @@ td.td-header {
   margin-top: 2px;
 }
 
-/* line 1036, sass/screen.scss */
+/* line 1055, sass/screen.scss */
 .overflow-hidden {
   overflow: hidden;
 }
 
-/* line 1040, sass/screen.scss */
+/* line 1059, sass/screen.scss */
 #main-contacts {
   position: absolute;
   top: 5px;
   right: 0;
 }
 
-/* line 1046, sass/screen.scss */
+/* line 1065, sass/screen.scss */
 #main-contacts img {
   margin-right: 3px;
   vertical-align: bottom;
 }
 
-/* line 1051, sass/screen.scss */
+/* line 1070, sass/screen.scss */
 #icq {
   float: left;
   height: 34px;
@@ -1277,19 +1298,19 @@ td.td-header {
   margin: 10px 0 0 0;
 }
 
-/* line 1059, sass/screen.scss */
+/* line 1078, sass/screen.scss */
 #icq SPAN {
   color: white;
   text-shadow: 1px 1px 2px black;
 }
 
-/* line 1064, sass/screen.scss */
+/* line 1083, sass/screen.scss */
 #icq A {
   color: white;
   text-decoration: none;
 }
 
-/* line 1069, sass/screen.scss */
+/* line 1088, sass/screen.scss */
 DIV.phone {
   float: left;
   width: 307px;
@@ -1299,7 +1320,7 @@ DIV.phone {
   line-height: 34px;
 }
 
-/* line 1078, sass/screen.scss */
+/* line 1097, sass/screen.scss */
 .phone SPAN {
   color: white;
   text-shadow: 1px 1px 2px black;
