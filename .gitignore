@@ -20,4 +20,4 @@ capybara-*.html
 /spec/tmp/*
 /pg/
 **.orig
-rerun.txt
+rerun.txt/vendor/bundle
